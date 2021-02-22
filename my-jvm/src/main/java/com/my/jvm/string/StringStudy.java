@@ -29,10 +29,12 @@ public class StringStudy {
     public void t3() {
         /**
          * 这种方法步骤
-         * 1、在运行时，创建的string对象会在堆中直接创建，而不会再常量池中创建
+         * 1、在运行时，创建的string对象会在堆中直接创建，而不会再常量池中创建，这是代表从其他数据传递过来的值，没有明面的字符串
+         * 2、如果想nihao这样的，他还是会被编译器优化，也会在字符串常量池中创建
          */
         Person person = new Person();
         person.setName("nihao");
+        person.setName("来自数据库传值");
     }
 
     public void t4() {
