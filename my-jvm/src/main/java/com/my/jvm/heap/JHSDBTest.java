@@ -5,7 +5,7 @@ import com.my.jvm.bo.Person;
 /**
  * HSDB工具类，使用方式，进入对应jdk的/lib中执行 sudo java -cp ./sa-jdi.jar sun.jvm.hotspot.HSDB
  *
- * 作用可以查看此进程中所有线程的内存模型
+ * 作用可以查看此进程中所有线程的内存模型，内存物理映射
  * 想要知道是那个进程只需要使用 jps 命令，找到对应的JHSDBTest类的进程id即可
  * 工具栏中的Tools->Objects Histogram 可以查看选中的线程中的所有对象，搜索自己想要的对象，并双击可以查看对象信息，重要的是拿到对象内存地址
  * 然后通过Tools->Heap Parameters进入堆信息，查看对象内存地址在堆中的位置
